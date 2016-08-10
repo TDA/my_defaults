@@ -1,0 +1,45 @@
+# This is Git's per-user configuration file.
+[core]
+# Please adapt and uncomment the following lines:
+	user = Sai Prashanth Chandramouli
+	email = schand31@asu.edu
+	excludesfile = /Users/schandramouli/.gitignore_global
+	pager = less -FMRiX
+[user]
+	name = Sai Chandramouli
+	email = schand31@asu.edu
+	username = TDA
+[push]
+	default = matching
+[alias]
+	s = status
+	a = add .
+	b = branch
+	c = commit -a -m
+	ca = commit -a --amend
+	ch = checkout
+	d = diff
+	l = log
+	lg = log -g
+	pt = push -u tda master
+	p = push -u origin master
+	pom = pull origin master
+	pu2f = push -u 2fa
+	rad = remote add origin
+	sai = push -u origin saipc
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = auto
+[amazon]
+	append-cr-url = true
+	pull-request-by-default = true
