@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/schandramouli/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,11 +51,11 @@ ZSH_THEME="sonicradish"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, fasd)
+plugins=(git rails fasd common-aliases github)
 
 # User configuration
 
-export PATH="/Applications/XAMPP/xamppfiles/bin/:/Users/schandramouli/Shell Scripts:/usr/local/sbin:/Users/schandramouli/.nvm/v0.10.38/bin:/Users/schandramouli/pear/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/apache-maven-3.3.3/bin:/Users/schandramouli/grails-3.0.8/bin:/Library/PostgreSQL/9.5/bin:/opt/X11/bin:/Library/TeX/texbin"
+export PATH="/Users/schandramouli/Shell Scripts:/usr/local/sbin:/Users/schandramouli/.nvm/v0.10.38/bin:/Users/schandramouli/pear/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/apache-maven-3.3.3/bin:/Users/schandramouli/grails-3.0.8/bin:/Library/PostgreSQL/9.5/bin:/opt/X11/bin:/Library/TeX/texbin:/Applications/XAMPP/xamppfiles/bin/:/Users/schandramouli/Library/Android/sdk/platform-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zs="sublime ~/.zshrc"
 alias gss="git-setup"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias omz="sublime ~/.oh-my-zsh"
 HISTFILE=~/.bash_history
 setopt inc_append_history
 setopt share_history
